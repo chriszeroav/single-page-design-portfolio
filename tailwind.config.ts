@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "custom-dark": "#030303",
+        "custom-black": "#030303",
         "custom-medium-brown": "#7A746E",
         "custom-light-cream": "#FFF7F0",
         "custom-galactic-blue": "#755CDE",
