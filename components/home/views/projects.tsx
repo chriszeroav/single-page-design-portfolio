@@ -34,8 +34,8 @@ export const Projects: FC<ProjectsProps> = () => {
   ];
 
   return (
-    <section className="max-w-7xl w-full mx-auto">
-      <h2 className="text-custom-black text-2xl font-bold mb-8 text-center">
+    <section className="">
+      <h2 className="text-custom-black text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 text-center">
         My Work
       </h2>
       <Carousel
@@ -50,10 +50,10 @@ export const Projects: FC<ProjectsProps> = () => {
       >
         <CarouselContent>
           {data.map((item, index) => (
-            <CarouselItem className="basis-[70%]" key={index}>
+            <CarouselItem className="basis-[70%] lg:basis-[40%]" key={index}>
               <img
                 src={item.image}
-                className="min-h-[180px] w-full object-cover object-center rounded-[10px]"
+                className="min-h-[180px] max-h-[360px] w-full object-cover object-center rounded-[10px]"
                 alt={`Project ${index + 1}`}
               />
             </CarouselItem>

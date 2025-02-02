@@ -8,22 +8,22 @@ export const Welcome: FC<WelcomeProps> = () => {
   return (
     <section className="p-5">
       <div className="max-w-7xl mx-auto w-full flex flex-col gap-8">
-        <div className="text-center flex flex-col gap-4">
-          <h1 className="text-custom-black text-4xl font-bold ">
+        <div className="text-center flex flex-col items-center gap-4">
+          <h1 className="text-custom-black font-bold text-4xl sm:text-5xl lg:text-6xl">
             Design solutions made easy
           </h1>
-          <p className="text-custom-medium-brown text-base font-medium">
+          <p className="text-custom-medium-brown max-w-2xl text-base font-medium sm:text-lg">
             With over ten years of experience in various design disciplines, I’m
             your one-stop shop for your design needs.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
           <div
             className={cn(
               "flex flex-col justify-between",
-              "aspect-[1/1.06] rounded-lg p-5",
-              "bg-custom-galactic-blue col-span-2"
+              "aspect-[1/1.06] rounded-lg p-5 sm:aspect-auto",
+              "bg-custom-galactic-blue col-span-2 sm:row-span-2"
             )}
           >
             <Image
@@ -39,7 +39,7 @@ export const Welcome: FC<WelcomeProps> = () => {
           <div
             className={cn(
               "flex flex-col justify-between",
-              "aspect-[1/1.06] rounded-lg p-5",
+              "aspect-[1/1.06] rounded-lg p-5 sm:aspect-[1/1.17] lg:aspect-[1/1.10]",
               "bg-custom-summer-yellow"
             )}
           >
@@ -56,7 +56,7 @@ export const Welcome: FC<WelcomeProps> = () => {
           <div
             className={cn(
               "flex flex-col justify-between",
-              "aspect-[1/1.06] rounded-lg p-5",
+              "aspect-[1/1.06] rounded-lg p-5 sm:aspect-[1/1.17] lg:aspect-[1/1.10]",
               "bg-custom-pink"
             )}
           >
@@ -73,8 +73,8 @@ export const Welcome: FC<WelcomeProps> = () => {
           <div
             className={cn(
               "flex flex-col justify-between",
-              "aspect-[2.17/1] rounded-lg p-5",
-              "bg-custom-light-red col-span-2"
+              "aspect-[2.17/1] rounded-lg p-5 sm:aspect-[2.10/1] lg:aspect-[2.24/1]",
+              "bg-custom-light-red col-span-2 sm:col-start-3"
             )}
           >
             <Image
@@ -90,8 +90,8 @@ export const Welcome: FC<WelcomeProps> = () => {
           <div
             className={cn(
               "flex flex-col justify-between",
-              "aspect-[1.9/1] rounded-lg p-5",
-              "bg-custom-cyan col-span-2"
+              "aspect-[1.9/1] rounded-lg p-5 sm:aspect-[1.80/1]",
+              "bg-custom-cyan col-span-2 lg:row-start-1 lg:col-start-5 lg:aspect-auto"
             )}
           >
             <Image
@@ -107,7 +107,7 @@ export const Welcome: FC<WelcomeProps> = () => {
           <div
             className={cn(
               "flex flex-col justify-between",
-              "aspect-[1.9/1] rounded-lg p-5",
+              "aspect-[1.9/1] rounded-lg p-5 sm:aspect-[1.80/1] lg:aspect-auto",
               "bg-custom-dark-purple col-span-2"
             )}
           >
